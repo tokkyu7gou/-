@@ -10,15 +10,17 @@
    mb_language("Japanese");
    mb_internal_encoding("UTF-8");
 
-   $yourname=$_POST['yourname'];
-   $youremail=$POST['youremail'];
-   $yourcase=$_POST['yourcase'];
+   $yourname=$_POST["yourname"];
+   $youremail=$_POST["youremail"];
+   $yourcase=$_POST["yourcase"];
 
-   if(mb_send_mail($yourname,$youremail,$yourcase)){
+   if(!empty($_Post("yourname","youremail","yourcase")){
+     if(mb_send_mail($yourname,$youremail,$yourcase)){
      echo"メールを送信しました";
    }else{
      echo"メールの送信に失敗しました";
    }
+ })
 ?>
 </body>
 </html>
