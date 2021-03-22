@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/conta.css">
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <p class="resizeimage">
+    <img src="pic/rumour.png" alt="連絡していただくページ">
+    </p>
+    <form action="confirmation.php" method="post" style="text-align:center">
+      <div class="box27">
+      <label for="onamae">名前：</label>
+       <input id="onamae" type="text" name="yourname" placeholder="山田太郎">
+       <br/>
+      <label for="adoresu"> アドレス：</label>
+       <input id="adoresu"type="email" name="youremail" placeholder="××@email.com">
+       <br/>
+      <label for="about"> 要件：</label>
+       <textarea id="about" name="yourcase" placeholder="依頼内容・予算など"></textarea>
+       <br/>
+       </div>
+      <input type="submit" value="この内容で送信する">
+    </form>
+  </body>
+</html>
