@@ -25,6 +25,10 @@ echo 'uwaan';
 </tr>
 </table>
 <input type="submit" value="送信" />
+
+<input name="youremail" type="hidden" value="youremail"/>
+<input name="yourname" type="hidden" value="yourname"/>
+<input name="yourcase" type="hidden" value="yourcase"/>
 </form>
 </body>
 </html>
